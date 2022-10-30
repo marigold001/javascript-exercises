@@ -1,3 +1,3 @@
-#JavaScript Assignments
+# JavaScript Assignments
 
 Various JavaScript assignments
