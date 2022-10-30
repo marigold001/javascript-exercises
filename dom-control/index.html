@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div#show-navigation {
+        width: 150px;
+        display: inline-block;
+        text-align: center;
+      }
+      nav#navigation {
+        display: none;
+      }
+      nav ul {
+        padding: 0;
+        border: 1px solid #000;
+      }
+      nav ul li {
+        list-style-type: none;
+        margin: 2px 0;
+        padding: 2px;
+      }
+      nav ul li:not(:last-child) {
+        border-bottom: 1px solid #000;
+      }
+      nav ul li a {
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+      }
+      nav ul li a:hover {
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="show-navigation">
+      <button>X</button>
+      <nav id="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Buy</a></li>
+          <li><a href="#">Learn More</a></li>
+          <li><a href="#">Our Culture</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
