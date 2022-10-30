@@ -92,11 +92,12 @@ console.log(firstElement(array, 3));
 // Console log at least 4 different cases.
 
 function integerRange(integer) {
-  if (integer >= 20 && integer <= 100) {
+  switch(true) {
+  case (integer >= 20 && integer <= 100):
     return true;
-  } else if (integer > 100 && integer < 400) {
+    case(integer > 100 && integer < 400):
     return false;
-  } else {
+  default:
     return undefined;
   }
 }
