@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+        input {
+            margin-bottom: 4px;
+            padding: 4px;
+            background-color: azure;
+            font-size: 14px;
+        }
+        option {
+            margin-bottom: 4px;
+            padding: 4px;
+            background-color: azure;
+            font-size: 14px;
+            color: rgb(133, 133, 133 );
+        }
+        select {
+            margin-bottom: 4px;
+            padding: 4px;
+            background-color: azure;
+            font-size: 14px;
+            border-width: 2px;
+            border-style: inset;
+            border-color: rgb(118, 118, 118), rgb(133, 133, 133 );
+            color:  rgb(133, 133, 133 );
+            font-weight: 400;
+        }
+        textarea {
+            margin-bottom: 8px;
+            padding: 4px;
+            background-color: azure;
+            font-size: 14px;
+            border-width: 2px;
+            border-style: inset;
+            border-color: rgb(118, 118, 118), rgb(133, 133, 133 );
+            color:  rgb(133, 133, 133 );
+            font-weight: 400;
+        }
+        label {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        button {
+            margin-bottom: 4px;
+            padding: 4px;
+            background-color: azure;
+            font-size: 14px;
+        }
+        /* ERROR MESSAGE */
+        .error {
+            color: red;
+            padding: 2px 4px;
+            display: none;
+            margin: 4px 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Book Your Appointment</h3>
+    <form method="get" autocomplete="on">
+        <label for="patients-name">Name:</label>
+        <input type="text" id="patients-name" name="patients-name" placeholder="Enter name">
+        <span id="name-error" class="error">Name is required and cannot contain space!</span>
+
+        <label for="patients-last-name">Last name:</label>
+        <input type="text" id="patients-last-name" name="patients-last-name" placeholder="Enter last name">
+        <span id="last-name-error" class="error">Last name is required and cannot contain space!</span>
+
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter age">
+        <span id="age-error" class="error">Age must be over 18 and a number!</span>
+
+
+        <label for="sex">Sex:</label>
+        <select name="sex" id="sex">
+            <option value="" selected disabled>Choose an option...</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Robot">Robot</option>
+        </select>
+        <span id="sex-error" class="error">Sex is required!</span>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter email">
+        <span id="email-error" class="error">Email has to be valid and is required!</span>
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message..."></textarea>
+        <button>Submit</button>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
