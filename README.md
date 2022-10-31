@@ -1,3 +1,3 @@
-# JavaScript Assignments
+# JavaScript Exercises
 
-Various JavaScript assignments
+Various JavaScript exercises
