@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: cadetblue;
+        position: absolute;
+        animation: divAnimation 6s infinite;
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes divAnimation {
+        0% {
+          left: 0px;
+          top: 0px;
+          transform: scale(1);
+        }
+        50% {
+          left: 320px;
+          transform: scale(1);
+        }
+        60% {
+          transform: scale(0.6);
+          top: 0;
+        }
+        100% {
+          top: 200px;
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
