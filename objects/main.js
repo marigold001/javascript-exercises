@@ -70,7 +70,7 @@ const phones = {
       },
     ],
   },
-  listManufacturers() {
+  showManufacturers() {
     let manufacturer = prompt(
       "Enter a manufacturer to get information about their models. Available manufacturers Samsung, Iphone, and Xiaomi."
     );
@@ -82,7 +82,7 @@ const phones = {
           "Model: " +
             samsung[phone].model +
             " - Colors: " +
-            samsung[phone].colors +
+            samsung[phone].colors.join(" ") +
             " - OS:" +
             samsung[phone].OS
         );
@@ -97,7 +97,7 @@ const phones = {
           "Model: " +
             iphone[phone].model +
             " - Colors: " +
-            iphone[phone].colors +
+            iphone[phone].colors.join(" ") +
             " - OS:" +
             iphone[phone].OS
         );
@@ -112,7 +112,7 @@ const phones = {
           "Model: " +
             xiaomi[phone].model +
             " - Colors: " +
-            xiaomi[phone].colors +
+            xiaomi[phone].colors.join(" ") +
             " - OS:" +
             xiaomi[phone].OS
         );
@@ -123,4 +123,4 @@ const phones = {
   },
 };
 
-phones.listManufacturers();
+phones.showManufacturers();
