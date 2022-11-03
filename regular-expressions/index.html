@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx</title>
+    <style>
+        #wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 15%;
+            margin-top: 20px;
+        }
+        input, textarea {
+            margin: 4px 0px;
+        }
+    </style>
+</head>
+<body>
+
+        <label for="is-alphanumeric">Alphanumeric:</label>
+        <input type="text" id="is-alphanumeric">
+        <span id="show-if-alphanumeric"></span>
+
+    <div id="wrapper">
+        <label for="text">Search and replace:</label>
+        <textarea name="text" cols="30" rows="10" placeholder="Write your text here"></textarea>
+        <input type="text" name="search" placeholder="Search">
+        <input type="text" name="replace" placeholder="Replace">
+        <input type="submit" id="submit">
+    </div>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
