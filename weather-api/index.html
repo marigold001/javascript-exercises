@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <script
+      src="https://kit.fontawesome.com/02de928ecb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      div#weather--wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 500px;
+      }
+      div#weather--wrapper--2 {
+        display: flex;
+        flex-direction: row;
+      }
+      div#weather--wrapper--2 i {
+        font-size: 50px;
+        margin: 0px 10px;
+      }
+      div#weather--wrapper--2 span#weather--temperature {
+        font-size: 36px;
+      }
+      div#weather--details {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 15px;
+        font-size: 18px;
+      }
+      div#weather--wrapper span#weather--city {
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Forecast</h2>
+    <div id="weather--wrapper">
+      <div id="weather--wrapper--2">
+        <i class="fa-solid fa-cloud"></i>
+        <span id="weather--temperature"></span>
+        <div id="weather--details">
+          <span>Precipitation: 20%</span>
+          <span>Humidity: 99%</span>
+          <span>Wind: 6mph</span>
+        </div>
+      </div>
+      <span id="weather--city">Belgrade</span>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
