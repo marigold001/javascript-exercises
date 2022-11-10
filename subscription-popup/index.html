@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Popup</title>
+    <style>
+        html, body {
+            height: 100%;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+        div#wrapper {
+            background-color: #5BA9FF;
+            padding: 30px 50px;
+            width: max-content;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            border: 2px solid #000;
+        }
+        div#wrapper input:first-child {
+            padding: 15px 80px;
+            margin-right: 20px;
+            border: 1px solid #000;
+            position: relative;
+        }
+        div#wrapper input:last-child {
+            padding: 15px 30px;
+            background-color: #FBC52C;
+            font-size: 14px;
+        }
+        div#wrapper input:first-child::placeholder {
+            font-size: 14px;
+        }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div id="wrapper">
+        <input type="text" placeholder="Enter your email" />
+        <input type="button" value="Subscribe" />
+      </div>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
