@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Popup</title>
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+            margin: 0;
+        }
+        div#cookie--popup {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: 0 10px 10px 10px;
+        }
+        h5 {
+            margin: 0 50px;
+            font-size: larger;
+        }
+        span {
+            margin-left: 50px;
+        }
+        div button {
+            padding: 10px 25px;
+        }
+        div button:last-child {
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cookie--popup">
+        <div>
+            <h5>Thank you for accepting cookies</h5>
+            <span>You can now hide the message or learn more about cookies</span>
+        </div>
+        <div>
+            <button>Hide</button>
+            <button>More Info</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
