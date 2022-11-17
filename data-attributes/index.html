@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Attributes and Tooltips</title>
+    <style>
+      p {
+        width: 75%;
+        margin: 50px auto;
+      }
+      p a[data-tooltip] {
+        position: relative;
+      }
+      p a[data-tooltip] span{
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+
+        /* Position the tooltip text */
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+
+        /* Fade in tooltip */
+        transition: opacity 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
+      maxime iusto officia voluptates voluptatibus, laborum architecto beatae
+      tenetur ullam quam explicabo facilis reiciendis, ex omnis cupiditate
+      blanditiis veritatis deleniti autem, sed minus. Natus officia accusantium
+      earum magni unde magnam sunt suscipit at tenetur possimus ducimus minima,
+      ullam necessitatibus, reiciendis tempora ea perspiciatis cupiditate
+      itaque, labore veniam blanditiis eveniet id. Pariatur veritatis sequi
+      similique a consectetur quasi at ducimus optio provident, commodi deserunt
+      rem doloremque asperiores iusto expedita vero architecto velit temporibus
+      nobis consequatur! Dicta maxime, quae dolor repellendus ipsa dolorem odio
+      at nam itaque nostrum maiores architecto ut perspiciatis fugit praesentium
+      tempora animi accusantium. Quis est nisi eius error?
+      <a href="#" data-tooltip="Work Hard Play Hard 1">Error <span></span></a> delectus
+      assumenda sequi, repellat eius maiores distinctio autem recusandae eum
+      veniam, minus tempora hic corrupti ut incidunt, doloremque earum placeat
+      tempore atque mollitia sunt a officia. Inventore asperiores, doloribus
+      minima aut libero recusandae quibusdam quidem voluptates laudantium
+      ratione, modi quaerat dolor! Qui, mollitia eius laborum error fugit
+      impedit, cum, minima provident exercitationem et animi. Rem saepe
+      inventore modi cupiditate impedit molestiae, nemo hic assumenda
+      voluptates, nobis reprehenderit ab illo quam maiores iure? Qui ab
+      adipisci, delectus debitis enim exercitationem accusamus. Fuga doloremque
+      dolores perferendis illo earum suscipit illum reiciendis similique
+      veritatis quam. Voluptas, earum aliquid. Et, aspernatur eum iure rerum
+      facilis dolores fugit sint facere alias debitis vel, dolor eaque omnis
+      dignissimos, fuga consectetur quo sapiente? Est unde voluptatibus commodi
+      facere necessitatibus, doloribus vitae veritatis optio recusandae
+      accusamus aliquid minima ratione aspernatur neque at, error sapiente
+      quisquam inventore quo et eligendi fuga! Libero nihil commodi, rem
+      doloribus repellat, illum ut quis labore vitae eius, amet reprehenderit
+      sequi tempore consectetur nobis consequatur! Itaque atque nam nesciunt,
+      quasi nisi aspernatur sunt expedita quae corrupti minima iusto eum, at
+      quaerat consequuntur laboriosam possimus.
+      <a href="#" data-tooltip="Work Hard Play Hard 2">Quas <span></span></a> dolor illo
+      deleniti, ut, ex assumenda porro voluptate reiciendis perferendis ullam
+      modi deserunt amet facilis corporis nam! Inventore dolores aspernatur
+      molestias illo quod pariatur, labore nobis quasi harum magni odit. Nam cum
+      laborum tempora, tenetur quas, mollitia est numquam eum expedita nihil
+      officiis eius nostrum, error deserunt?
+      <a href="#" data-tooltip="Work Hard Play Hard 3">Qui <span></span></a> vitae aut numquam
+      sed voluptatibus quibusdam in ratione, iusto rem cupiditate, rerum dolorem
+      consequatur. Magnam atque, officiis error at quis nihil tenetur optio
+      architecto excepturi nulla est illum quod labore enim itaque voluptas modi
+      velit reprehenderit nesciunt molestiae hic nemo quisquam?
+      <a href="#" data-tooltip="Work Hard Play Hard 4">Quod <span></span></a> modi enim laborum
+      ratione laboriosam ea, expedita quo minus? Perspiciatis pariatur nihil
+      harum quasi. Dolorum molestiae qui earum possimus!
+    </p>
+
+    <script src="main.js"></script>
+  </body>
+</html>
