@@ -6,12 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page State</title>
     <style>
-        html, body {
-            height: 100%;
-        }
+      html,
+      body {
+        height: 100%;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+        padding: 10px;
+      }
+      input#name,
+      input#text--color,
+      input#background--color {
+        margin-bottom: 10px;
+      }
+      input {
+        padding: 10px 10px;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+      }
     </style>
   </head>
   <body>
+    <form>
+      <fieldset>
+        <legend>Page State</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+
+        <label for="text--color">Text color:</label>
+        <input type="text" id="text--color" />
+
+        <label for="background--color">Background color:</label>
+        <input type="text" id="background--color" />
+
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
     <h2>Saved Page State in Cookies</h2>
 
     <p>
