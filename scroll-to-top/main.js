@@ -1,0 +1,7 @@
+const button = document.querySelector("button");
+
+button.addEventListener("click", toTop);
+
+function toTop() {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+}
