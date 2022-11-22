@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Input Fields</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="floating--animation">
+      <input
+        type="text"
+        placeholder=" "
+        id="floating--label"
+        minlength="5"
+        required
+      />
+      <label for="floating--label">First name</label>
+    </div>
+
+    <div class="container">
+      <input
+        id="slide--right"
+        type="text"
+        placeholder="Slide Right Animation"
+      />
+      <span class="focus--border"></span>
+    </div>
+
+    <div class="container">
+      <input type="text" id="expanding" placeholder="Expanding Animation" />
+      <span class="focus--border"></span>
+    </div>
+
+    <div class="container">
+      <input type="text" id="middle--slide" placeholder="Middle Animation" />
+      <span class="focus--border"></span>
+    </div>
+
+    <div class="container">
+      <input type="text" id="border--one" placeholder="Border Animation One" />
+      <span class="focus--border"> <i></i></span>
+    </div>
+
+    <div class="container">
+      <input type="text" id="border--two" placeholder="Border Animation Two" />
+      <span class="focus--border"><i></i></span>
+    </div>
+
+    <div class="container">
+      <input
+        type="text"
+        id="background--one"
+        placeholder="Background Animation"
+      />
+      <span class="focus--background"></span>
+    </div>
+
+    <div class="container">
+      <input type="text" id="background--two" placeholder="Background Two" />
+      <span class="focus--background"></span>
+    </div>
+
+    <div class="container">
+      <input
+        type="text"
+        id="background--three"
+        placeholder="Background Three"
+      />
+      <span class="focus--background"></span>
+    </div>
+
+    <div class="container">
+      <span id="label--left">
+        <input
+          id="indent--left"
+          id="name"
+          type="text"
+          placeholder="Insert cool name"
+        /><label for="name">Name</label>
+      </span>
+    </div>
+
+    <div class="container">
+      <span>
+        <input
+          id="balloon"
+          id="state"
+          type="text"
+          placeholder="Liquid, solid, gaseous..."
+        /><label for="state">State</label>
+      </span>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
