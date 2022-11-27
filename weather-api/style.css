@@ -1,0 +1,30 @@
+div#weather--wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 550px;
+}
+
+div#weather--wrapper--2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0 15px;
+}
+
+div#weather--wrapper--2 span:first-of-type {
+    font-size: 36px;
+}
+
+div#weather--details {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px;
+}
+
+div#weather--wrapper--2 div#weather--details span {
+    font-size: 18px;
+}
+
+div#weather--wrapper span#weather--city {
+  font-size: 24px;
+}

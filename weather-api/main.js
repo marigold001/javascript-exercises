@@ -1,6 +1,6 @@
+const api = "3e7f2bba1efd1111099a46602d3864be6a5048fa5c1783d35d3ceeb07281986e";
 const url =
   " https://api.ambeedata.com/weather/forecast/by-lat-lng?lat=44&lng=20";
-const api = "3e7f2bba1efd1111099a46602d3864be6a5048fa5c1783d35d3ceeb07281986e";
 
 async function getWeatherInfo(url = "", data = {}) {
   let response = await fetch(url, data);
@@ -20,15 +20,36 @@ getWeatherInfo(url, {
   },
 });
 
-const temperature = document.querySelector("#weather--temperature");
-const weatherDetails = document.querySelectorAll("#weather--details span");
+const weatherWrapper = document.querySelector("div#weather--wrapper--2")
 
 function showWeatherInfo(json) {
   const results = json.data.forecast[0];
-  return [
-    (temperature.innerHTML = results.temperature + "&#8457;"),
-    (weatherDetails[0].innerHTML = "Precipitation: " + results.precipIntensity),
-    (weatherDetails[1].innerHTML = "Humidity: " + results.humidity),
-    (weatherDetails[2].innerHTML = "Wind: " + results.windSpeed + "mph"),
-  ];
+  
+  let image = new Image(100, 100);
+  image.src = "https://assetambee.s3-us-west-2.amazonaws.com/weatherIcons/PNG/"+ results.icon +".png";
+  weatherWrapper.appendChild(image);
+  
+  const temperature = document.createElement("span");
+  const temperatureText = document.createTextNode(results.temperature + "\u2109");
+  temperature.appendChild(temperatureText);
+  weatherWrapper.appendChild(temperature);
+  
+  const weatherDetails = document.createElement("div");
+  weatherDetails.setAttribute('id', 'weather--details');
+  weatherWrapper.appendChild(weatherDetails);
+
+  const precipitation = document.createElement("span");
+  const precipitationText = document.createTextNode("Precipitation: " + results.precipIntensity);
+  precipitation.appendChild(precipitationText);
+  weatherDetails.appendChild(precipitation);
+
+  const humidity = document.createElement("span");
+  const humidityText = document.createTextNode("Humidity: " + results.humidity);
+  humidity.appendChild(humidityText);
+  weatherDetails.appendChild(humidity);
+
+  const wind = document.createElement("span");
+  const windText = document.createTextNode("Wind: " + results.windSpeed + " mph");
+  wind.appendChild(windText);
+  weatherDetails.appendChild(wind);
 }
