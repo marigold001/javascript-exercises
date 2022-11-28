@@ -3,6 +3,15 @@ div#weather--wrapper {
   flex-direction: row;
   justify-content: space-between;
   width: 550px;
+  position: relative;
+}
+
+div#spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* visibility: hidden; */
 }
 
 div#weather--wrapper--2 {

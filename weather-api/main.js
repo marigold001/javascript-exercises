@@ -2,11 +2,15 @@ const api = "3e7f2bba1efd1111099a46602d3864be6a5048fa5c1783d35d3ceeb07281986e";
 const url =
   " https://api.ambeedata.com/weather/forecast/by-lat-lng?lat=44&lng=20";
 
+
 async function getWeatherInfo(url = "", data = {}) {
   let response = await fetch(url, data);
   if (response.ok) {
     let json = await response.json();
-    return showWeatherInfo(json);
+    setTimeout(function() {
+      showWeatherInfo(json);
+      document.querySelector("div#spinner").style.opacity = 0;
+    }, 2000)
   } else {
     alert("HTTP Error: " + response.status);
   }
@@ -52,4 +56,6 @@ function showWeatherInfo(json) {
   const windText = document.createTextNode("Wind: " + results.windSpeed + " mph");
   wind.appendChild(windText);
   weatherDetails.appendChild(wind);
+
+  document.querySelector("span#weather--city").innerHTML = "Belgrade";
 }

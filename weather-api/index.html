@@ -5,14 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather API</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ispinner.prefixed.css">
   </head>
   <body>
     <h2>Forecast</h2>
     <div id="weather--wrapper">
-      <div id="weather--wrapper--2">
+      <div id="spinner">
+        <div class="ispinner ispinner-large">
+          <div class="ispinner-blade"></div>
+          <div class="ispinner-blade"></div>
+          <div class="ispinner-blade"></div>
+          <div class="ispinner-blade"></div>
+          <div class="ispinner-blade"></div>
+          <div class="ispinner-blade"></div>
+          <div class="ispinner-blade"></div>
+          <div class="ispinner-blade"></div>
+        </div>
       </div>
-      <span id="weather--city">Belgrade</span>
+      <div id="weather--wrapper--2"></div>
+      <span id="weather--city"></span>
     </div>
 
     <script src="main.js"></script>
