@@ -9,8 +9,8 @@ async function getWeatherInfo(url = "", data = {}) {
     let json = await response.json();
     setTimeout(function() {
       showWeatherInfo(json);
-      document.querySelector("div#spinner").style.opacity = 0;
-    }, 2000)
+      document.querySelector("div#spinner").style.display = "none";
+    }, 1500)
   } else {
     alert("HTTP Error: " + response.status);
   }
