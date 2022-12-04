@@ -1,46 +1,102 @@
 div#wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 div#wrapper div {
-    text-align: center;
+  text-align: center;
 }
 
 div.card {
-    position: relative;
+  position: relative;
 }
 
 div.card::before {
-    content: "";
-    width: 95%;
-    height: 100%;
-    max-height: 800px;
-    border-radius: 5px;
-    background-image: url(./img/beach-1.jpg);
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
-    position: relative;
-    display: block;
-}
-
-div#wrapper div.card div.top--text {
-    position: absolute;
-    top: 10px;
-    right: 50px;
-    text-align: right;
-}
-
-img {
-    width: 95%;
-    height: 100%;
-    max-height: 800px;
-    border-radius: 5px;
-    position: relative;
+  content: "";
+  width: 95%;
+  height: 500px;
+  max-height: 800px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  transition: 1s ease-in;
 }
 
 div.card:hover::before {
-    filter: blur(2px);
+  filter: blur(4px);
+}
+
+div.card.one::before {
+  background-image: url("./img/it-1.jpg");
+}
+
+div.card.two::before {
+  background-image: url("./img/it-2.jpg");
+}
+
+div.card.three::before {
+  background-image: url("./img/it-3.jpg");
+}
+
+div.card.four::before {
+  background-image: url("./img/it-4.jpg");
+}
+
+div.card.five::before {
+  background-image: url("./img/it-5.jpg");
+}
+
+div.card.six::before {
+  background-image: url("./img/it-6.jpg");
+}
+
+div.card.seven::before {
+  background-image: url("./img/it-7.jpg");
+}
+
+div.card.eight::before {
+  background-image: url("./img/it-8.jpg");
+}
+
+div.card.nine::before {
+  background-image: url("./img/it-9.jpg");
+}
+
+div#wrapper div.card div.top--text {
+  position: absolute;
+  top: 18px;
+  right: 50px;
+  text-align: right;
+  color: #c2c2c2;
+}
+
+div#wrapper div.card div.bottom--text {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  text-align: left;
+  color: #c2c2c2;
+}
+
+div.top--text p.day {
+  font-size: 56px;
+  line-height: 100%;
+  margin: 0;
+}
+
+div.top--text p.month--and--year {
+  font-size: 18px;
+  margin: 4px 0;
+}
+
+div.top--text p.time {
+  font-size: 14px;
+  margin: 0;
 }
