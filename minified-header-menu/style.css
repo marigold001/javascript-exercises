@@ -1,0 +1,70 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Philosopher", sans-serif;
+  background-color: #e1f5fe;
+}
+
+div#container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+div#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #81d4fa;
+  height: 60px;
+  transition: 0.5s height linear;
+}
+
+div#header img {
+  height: 90px;
+  transition: 0.5s height ease-out;
+}
+
+div#header nav ul {
+  padding: 0;
+  margin-right: 50px;
+}
+
+div#header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  line-height: 80px;
+  margin: 0 15px;
+}
+
+div#header nav ul li a {
+  color: #002171;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s font-size ease-out;
+}
+
+/* FIXED ON SCROLL */
+
+.fixed--top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+div#header.fixed--top {
+  height: 30px;
+}
+
+div#header.fixed--top nav ul li a {
+  font-size: 18px;
+}
+
+div#header.fixed--top nav ul li {
+  line-height: 20px;
+}
+
+div#header.fixed--top img {
+  height: 70px;
+}
