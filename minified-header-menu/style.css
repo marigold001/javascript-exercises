@@ -1,34 +1,51 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Philosopher", sans-serif;
+  background-color: #e1f5fe;
+}
+
 div#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 15px;
   background-color: #81d4fa;
+  padding: 0 15px;
   transition: 0.5s height linear;
 }
 
-div#header img {
-  height: 70px;
-  margin: 0 15px;
+/* class fixed to be added to header on scroll */
+.fixed--top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-div#header nav {
+div#header img {
+  height: 90px;
+  transition: 0.5s height ease-out;
+}
+
+div#header nav#desktop {
   display: none;
 }
 
+/* class to hide the mobile navigation. on menu click it will be disabled and mobile menu will show. on another click it will hide it.  */
 nav.show {
   display: none;
 }
 
 nav.mobile {
   text-align: center;
-  background-color: #81d4fa;
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 10px;
 }
-nav.mobile ul {
-  padding: 0;
+
+div#header nav.mobile ul li:not(:first-child) {
+  margin: 15px 0;
 }
+
 nav.mobile ul li {
-  list-style-type: none;
+  margin: 25px 0;
 }
 
 nav.mobile ul li a {
@@ -36,15 +53,22 @@ nav.mobile ul li a {
   color: #000;
 }
 
-.show {
-  display: "block";
+div#header nav ul li a:hover {
+  color: #fff;
 }
 
+
 div#header i {
-  display: inline-block;
   cursor: pointer;
   font-size: 40px;
   margin: 0 15px;
+  float: right;
+  line-height: 100px;
+  transition: 0.5s font-size linear;
+}
+
+div#header i:hover {
+  color: #fff;
 }
 
 div#header nav ul li {
@@ -53,33 +77,21 @@ div#header nav ul li {
   list-style-type: none;
 }
 
-@media only screen and (min-width: 788px) {
-  body {
-    padding: 0;
-    margin: 0;
-    font-family: "Philosopher", sans-serif;
-    background-color: #e1f5fe;
-  }
+div#container {
+  margin: 0 50px;
+}
 
-  div#container {
-    margin: 0 50px;
-  }
+@media only screen and (min-width: 788px) {
 
   div#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
-    background-color: #81d4fa;
     transition: 0.5s height linear;
   }
 
-  div#header img {
-    height: 90px;
-    transition: 0.5s height ease-out;
-  }
-
-  div#header nav {
+  div#header nav#desktop {
     display: inline-block;
   }
 
@@ -106,27 +118,20 @@ div#header nav ul li {
 
   /* FIXED ON SCROLL */
 
-  .fixed--top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  div#header.fixed--top nav ul li a {
+  div#header nav ul li a {
     font-size: 18px;
   }
 
-  div#header.fixed--top nav ul li {
+  div#header nav ul li {
     line-height: 20px;
   }
 
-  div#header.fixed--top img {
+  div#header img {
     height: 70px;
+    margin-top: 0;
   }
 
   div#header i {
     display: none;
-    transition: 0.5s font-size ease-out;
   }
 }
