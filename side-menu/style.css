@@ -1,60 +1,57 @@
-div {
-  width: 150px;
+div#website--links {
+  width: 200px;
   border: 1px solid #333;
   border-radius: 3px;
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
+
 h3 {
   font-size: 16px;
   text-align: center;
   border-bottom: 1px solid #333;
   padding: 15px 5px;
   margin: 0px;
-  background-color: #a882f6;
+  background-color: #5c34aa;
   color: #fff;
 }
+
 ul {
   padding: 0;
   margin: 0;
 }
+
 a {
   text-decoration: none;
-  color: #999;
   background-color: #ffee5a;
-  display: block;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  line-height: 20px;
+  color: #5c34aa;
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s transform ease-out;
 }
+
+i {
+  font-size: 34px;
+  margin-left: 5px;
+}
+
 li {
   list-style-type: none;
   position: relative;
   transition: 0.3s ease-in-out;
+  display: inline-block;
 }
-a::before {
-  font-family: "FontAwesome";
-  content: "\f1a1";
-  margin-right: 10px;
-  margin-left: 10px;
-  color: #a882f6;
-  font-size: 30px;
+
+a:hover {
+  transform: translateX(-44px);
 }
-a::after {
-  content: "";
-  padding: 18px 10px;
-  margin-bottom: 10px;
-}
-li:hover {
-  transform: translateX(-10px);
-}
-li:hover a::before {
-  content: "";
-}
-li:hover a::after {
-  content: "Visit";
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  background-color: #a882f6;
+
+span {
+  background-color: #5c34aa;
   color: #fff;
+  height: 100%;
+  padding: 15px 5px;
 }
