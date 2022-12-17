@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lightbox Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Lightbox Gallery</h2>
+    <div class="row">
+      <img src="./img/nature-1.jpg" alt="Nature-1" />
+      <img src="./img/nature-2.jpg" alt="Nature-2" />
+      <img src="./img/nature-3.jpg" alt="Nature-3" />
+      <img src="./img/nature-4.jpg" alt="Nature-4" />
+    </div>
+    <div class="modal">
+      <span class="close cursor">&times;</span>
+      <div class="modal-content">
+        <img src="./img/nature-1.jpg" alt="Snow Owl" />
+        <img src="./img/nature-2.jpg" alt="Mini Green Cactus" />
+        <img src="./img/nature-3.jpg" alt="Snow Covered Christmas Tree" />
+        <img src="./img/nature-4.jpg" alt="Green Agave" />
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <div id="caption--container">
+            <span id="caption--text"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

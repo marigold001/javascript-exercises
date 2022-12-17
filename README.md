@@ -11,4 +11,5 @@ contact form [CodePen](https://codepen.io/marigold001/full/dyKmKEJ)\
 image info [CodePen](https://codepen.io/marigold001/full/abKYjoW)\
 blur-cards [CodePen](https://codepen.io/marigold001/full/abKQrqE)\
 minified-header-menu [CodePen](https://codepen.io/marigold001/full/xxzQoLB)\
-full-screen-overlay-menu [CodePen](https://codepen.io/marigold001/full/xxzNGJw)
+full-screen-overlay-menu [CodePen](https://codepen.io/marigold001/full/xxzNGJw)\
+lightbox-gallery [CodePen](https://codepen.io/marigold001/full/wvxwEwx)
