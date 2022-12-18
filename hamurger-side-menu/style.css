@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+.wrapper {
+    background-color: #FC466B;
+}
+
+.hide--menu {
+    position: absolute;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hide--menu .menu {
+    transform: translateX(100%);
+    background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
+    transition: all 0.3s ease-in;
+    padding: 10px 0;
+    opacity: 0;
+}
+
+.icons {
+    position: relative;
+    height: 70px;
+}
+
+i {
+    cursor: pointer;
+    padding: 5px;
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all 0.3s ease-in; 
+    transform: rotate(0deg) translate(-50%, -50%);
+}
+
+.open {
+    z-index: 1;
+}
+
+.close {
+    opacity: 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+}
+
+.hide--menu.reveal .menu {
+    transform: translateX(0);
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
+    transition: all 0.3s ease-in;
+    padding: 10px 0;
+    opacity: 1;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    margin: 25px;
+}
