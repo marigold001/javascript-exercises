@@ -1,6 +1,10 @@
 const openIcon = document.querySelector("i.open");
 const closeIcon = document.querySelector("i.close");
 const menu = document.querySelector(".hide--menu");
+const wrapper = document.querySelector(".wrapper");
+const main = document.querySelector("main");
+
+main.style.paddingTop = wrapper.offsetHeight + "px";
 
 openIcon.addEventListener("click", showMenu);
 
