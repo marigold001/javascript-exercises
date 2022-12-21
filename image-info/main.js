@@ -1,30 +1,30 @@
-const imageAltText = document.querySelector("img").alt;
-const infoArea = document.querySelector("div#info--text");
-const infoOpen = document.querySelector("i#info--open");
-const infoClose = document.querySelector("i#info--close");
-const text = document.querySelector("div#info--text p");
+const imageText = document.querySelectorAll("img");
+const infoOpen = document.querySelectorAll("i.info--open");
+const infoClose = document.querySelectorAll("i.info--close");
+const text = document.querySelectorAll("div.info--text p");
+const infoArea = document.querySelectorAll("div.info--text");
 
-console.log(imageAltText);
+infoOpen.forEach((icon, id) => icon.addEventListener("click", () => {
+    showInfo(id)
+}));
 
-infoOpen.addEventListener("click", showInfo);
-
-function showInfo() {
-    infoArea.style.opacity = 0.6;
-    infoArea.style.height = "20vh";
-    infoOpen.style.opacity = 0;
-    infoOpen.style.bottom = "30px";
-    infoClose.style.opacity = 1;
-    infoClose.style.bottom = "18vh";
-    text.innerHTML = imageAltText;
+function showInfo(id) {
+    infoArea[id].style.display = "flex";
+    const infoAreaHeight = infoArea[id].offsetHeight;
+    infoArea[id].style.opacity = 0.6;
+    infoOpen[id].style.display = "none";
+    infoClose[id].style.display = "block";
+    infoClose[id].style.bottom = (infoAreaHeight - infoClose[id].offsetHeight / 2) + "px";
+    text[id].innerHTML = imageText[id].alt;
 }
 
-infoClose.addEventListener("click", closeInfo);
+infoClose.forEach((icon, id) => icon.addEventListener("click", () => {
+    closeInfo(id)
+}));
 
-function closeInfo() {
-    infoArea.style.opacity = 0;
-    infoArea.style.height = 0;
-    infoClose.style.opacity = 0;
-    infoClose.style.bottom = "18vh";
-    infoOpen.style.opacity = 1;
-    infoOpen.style.bottom = "30px";
+function closeInfo(id) {
+    infoArea[id].style.display = "none";
+    infoClose[id].style.display = "none";
+    infoOpen[id].style.display = "block";
 }
+

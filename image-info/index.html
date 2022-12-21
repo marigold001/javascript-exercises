@@ -1,71 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Info Alt Text</title>
-    <script src="https://kit.fontawesome.com/02de928ecb.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/02de928ecb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Images with additional information text</h1>
+    <h2>Click the icon to show the text</h2>
+    <div id="container">
+      <div class="wrapper">
+        <img src="./img/animal-1.jpg" alt="The red fox is the largest of the true foxes and one of the most widely distributed members of the order Carnivora." />
+        <i class="fa-solid fa-circle-info info--open"></i>
+        <i class="fa-solid fa-circle-xmark info--close"></i>
+        <div class="info--text"><p></p></div>
+      </div>
 
-    <style>
-        html, body {
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
-        img {
-            height: 100vh;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            position: relative;
-        }
-        i#info--open {
-            position: absolute;
-            bottom: 30px;
-            left: 50px;
-            font-size: 36px;
-            color: #fff;
-            cursor: pointer;
-            z-index: 1;
-            transition: 0.3s all ease-in-out;
+      <div class="wrapper">
+        <img src="./img/animal-2.jpg" alt='The American Staffordshire Terrier is described as "confident, smart and good-natured".' />
+        <i class="fa-solid fa-circle-info info--open"></i>
+        <i class="fa-solid fa-circle-xmark info--close"></i>
+        <div class="info--text"><p></p></div>
+      </div>
 
-        }
-        i#info--close {
-            position: absolute;
-            bottom: 18vh;
-            left: 50px;
-            font-size: 36px;
-            color: #fff;
-            cursor: pointer;
-            z-index: 1;
-            opacity: 0;
-            transition: 0.3s all ease-in-out;
-
-        }
-        div#info--text {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            opacity: 0;
-            background-color: #000;
-            width: 100%;
-            height: 0;
-            color: #fff;
-            box-sizing: border-box;
-            padding: 25px;
-            transition: 0.3s all ease-in-out;
-        }
-        div#info--text p {
-            font-size: 24px;
-        }
-    </style>
-</head>
-<body>
-    <img src="./img/deer.jpg" alt="A deer alone in the woods staring at the camera.">
-    <i class="fa-solid fa-circle-info" id="info--open"></i>
-    <i class="fa-solid fa-circle-xmark" id="info--close"></i>
-    <div id="info--text"><p></p></div>
+      <div class="wrapper">
+        <img src="./img/animal-3.jpg" alt="The leopard is one of the five extant species in the genus Panthera, a member of the cat family, Felidae." />
+        <i class="fa-solid fa-circle-info info--open"></i>
+        <i class="fa-solid fa-circle-xmark info--close"></i>
+        <div class="info--text"><p></p></div>
+      </div>
+    </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

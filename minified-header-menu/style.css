@@ -1,14 +1,20 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Philosopher", sans-serif;
-  background-color: #e1f5fe;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f5fb;
 }
+
+/* HEADER */
 
 div#header {
   background-color: #81d4fa;
   padding: 0 15px;
-  transition: 0.5s height linear;
+  transition: 0.5s all linear;
+}
+
+h1, h2, h3 {
+  text-align: center;
 }
 
 /* class fixed to be added to header on scroll */
@@ -21,7 +27,7 @@ div#header {
 
 div#header img {
   height: 90px;
-  transition: 0.5s height ease-out;
+  transition: 0.5s all ease-out, 1s transform ease-out;
 }
 
 div#header nav#desktop {
@@ -50,11 +56,12 @@ nav.mobile ul li {
 
 nav.mobile ul li a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
+  font-size: 18px;
 }
 
 div#header nav ul li a:hover {
-  color: #fff;
+  color: #002171;
 }
 
 
@@ -65,10 +72,11 @@ div#header i {
   float: right;
   line-height: 100px;
   transition: 0.5s font-size linear;
+  color: #fff;
 }
 
 div#header i:hover {
-  color: #fff;
+  color: #002171;
 }
 
 div#header nav ul li {
@@ -77,8 +85,20 @@ div#header nav ul li {
   list-style-type: none;
 }
 
+/* MAIN */
+
 div#container {
   margin: 0 50px;
+}
+
+div#container h4 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+div#container p {
+  font-size: 20px;
+  padding-bottom: 20px;
 }
 
 @media only screen and (min-width: 788px) {
@@ -106,7 +126,7 @@ div#container {
   }
 
   div#header nav ul li a {
-    color: #002171;
+    color: #fff;
     text-decoration: none;
     font-size: 20px;
     transition: 0.5s font-size ease-out;
